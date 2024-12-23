@@ -51,6 +51,17 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
+
+  compress:
+    name: calibreapp/image-actions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: calibreapp/image-actions
+        uses: docker://calibreapp/github-image-actions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
   # Deployment job
   deploy:
     environment:
