@@ -3,6 +3,7 @@ layout: post
 title:  "Començando"
 author: maltempi
 categories: [ Outros ]
+comments: false
 image: assets/images/394px-Morris_Willow_Bough_1887.jpg
 ---
 
